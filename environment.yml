@@ -1,0 +1,18 @@
+name: raccoon_dataset
+channels: !!python/tuple
+- conda-forge
+- defaults
+dependencies:
+- conda-forge::opencv=3.2.0=np111py35_0
+- numpy
+- python=3.5.3=1
+- pip:
+  - backports.weakref==1.0rc1
+  - bleach==1.5.0
+  - html5lib==0.9999999
+  - markdown==2.6.8
+  - protobuf==3.3.0
+  - tensorflow==1.2.1
+  - werkzeug==0.12.2
+prefix: /home/theresa/miniconda3/envs/raccoon_dataset
+
