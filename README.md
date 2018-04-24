@@ -48,3 +48,9 @@ Labelled training images and annotations are supposed to be converted to record 
     bigfoot
  - Run script `./create_record.sh test` . Replace `test` with the prefix of the training images folder name. For instance, if the training and evaluation folder named "test2_train_images" and "test2_val_images", replace the parameter with `test2` instead of `test`.
  - Voila, you will see two record files named `test_train.record` and `test_val.record`respectively in the same folder
+ 
+ 
+You can find more info on how to enable GPU graphic card and how to train models in these two wiki pages.
+- [Install tensorflow gpu 1.6 for Ubuntu 16.04](https://github.com/ichbinblau/tfrecord_generator/wiki/Install-tensorflow-gpu-1.6-for-Ubuntu-16.04)
+- [Train your own model with SSD MobileNet](https://github.com/ichbinblau/tfrecord_generator/wiki/Train-your-own-model-with-SSD-MobileNet)
+
