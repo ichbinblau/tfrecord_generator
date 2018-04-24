@@ -1,5 +1,11 @@
 # Prepare training dataset for Tensorflow 
 
+## Set up environment
+Make sure that all the python dependencies used by the tool are installed for using it. 
+
+ - Install conda or miniconda (refer to the [document](https://conda.io/docs/user-guide/install/linux.html) on how to install it 
+ - Run `conda env create -f environment.yml` to create the environment. You can find the `environment.yml` file in the [repo](https://github.com/ichbinblau/tfrecord_generator).
+ - Activate the environment by running `source activate tfrecord_dataset`
 
 ## Label Images
 
@@ -32,7 +38,7 @@
                ----0100.xml  
 
 ## Create tensorflow's record file
-Labelled training images and annotations are supposed to be converted to a record file.  Based on the scripts in this [post](https://github.com/datitran/raccoon_dataset), I made the script more automated. 
+Labelled training images and annotations are supposed to be converted to record files.  Based on the scripts in this [post](https://github.com/datitran/raccoon_dataset), I made the script more automated. 
 
  - Check out the [repo](https://github.com/ichbinblau/tfrecord_generator)
  - Copy `test_train_images` and `test_val_images` folder to under the **tfrecord_generator** folder 
@@ -41,4 +47,4 @@ Labelled training images and annotations are supposed to be converted to a recor
     person
     bigfoot
  - Run script `./create_record.sh test` . Replace `test` with the prefix of the training images folder name. For instance, if the training and evaluation folder named "test2_train_images" and "test2_val_images", replace the parameter with `test2` instead of `test`.
- - Voila, you will see two record files name `test_train.record` and `test_val.record`respectively in the same folder
+ - Voila, you will see two record files named `test_train.record` and `test_val.record`respectively in the same folder
